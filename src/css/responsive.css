@@ -1,0 +1,34 @@
+@media screen and (max-width:620px){
+    /*HEADER*/
+    .logo-img{
+        width: 8em;
+    }
+    .main-title{
+        color: red;
+        font-size: 1.5em;
+    }
+
+    /*Main*/
+    main{
+        margin: 0.8em;
+        gap: 10px;
+    }
+
+    .button-arrow{
+        padding: 0.2em;
+    }
+    .button-arrow img{
+        width: 30px;
+        
+    }
+
+    .box-title .title{
+        font-size: 1.2em;
+    }
+    .box-title .hp{
+        font-size: 0.9em;
+    }
+    .character-img{
+        width: 14em;
+    }
+}

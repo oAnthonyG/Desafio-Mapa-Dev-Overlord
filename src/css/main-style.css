@@ -1,0 +1,141 @@
+body{
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+/*HEADER*/
+.header{
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
+    padding: 2em;
+}
+.logo-img{
+    width: 8em;
+    margin-right: 0.8em;
+}
+
+.main-title{
+    font-size: 1.6em;
+    color: red;
+}
+
+/*CARD SECTION*/
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin: 40px;
+    
+}
+
+.list-card{
+    position: relative;
+    width: 310px;
+    height: 520px;
+    border-radius: 5%;
+    overflow: hidden;
+    
+}
+
+.character-img{
+    width: 14.2em;
+}
+.character-img.pandora{
+    width: 12em;
+}
+
+.box-title{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 0.1em;
+    padding: 0.7em;
+    border-radius: 10px 10px 0 0;
+    background-color: rgba(131, 130, 130, 0.9);
+}
+
+.box-title .title, .hp{
+    color: white;
+
+}
+
+.box-title .hp{
+    border-radius: 20px;
+    padding: 0.3em;
+    background-color: black;
+}
+
+.description{
+    margin: 1em;
+    width: 90%;
+    
+}
+.description h3{
+    color: white;
+    background-color: black;
+    padding-left: 0.4em;
+}
+
+.description p{
+    padding: 0.4em;
+    background-color: gray;
+    border-radius: 0 0 10px 10px;
+    text-align: justify;
+    max-height: 130px;
+    overflow-y: auto;
+}
+
+
+
+.background-card-1{
+    background: url(../img/capa1.jpg) center / cover no-repeat;
+}
+.background-card-2{
+    background: url(../img/capa2.jpg) center / cover no-repeat;
+}
+.background-card-3{
+    background: url(../img/capa3.jpg) center / cover no-repeat;
+}
+.background-card-4{
+    background: url(../img/capa4.jpg) center / cover no-repeat;
+}
+.background-card-5{
+    background: url(../img/capa5.jpg) center / cover no-repeat;
+}
+
+.button-arrow{
+    border-radius: 50%;
+    padding: 0.5em;
+    cursor:  pointer;
+    background-color: #fff;
+    border: 0;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.button-arrow.btn-back{
+transform: rotate(180deg);
+}
+
+.button-arrow:hover{
+    background-color: rgb(95, 1, 25);
+}
+
+.main-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    padding: 0.5em;
+    opacity: 0;
+    box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
+    
+}
+
+.main-card.selected{
+    opacity: 1;
+    z-index: 1;
+}
